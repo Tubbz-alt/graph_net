@@ -662,4 +662,4 @@ class GlobalBlock(snt.AbstractModule):
 
     collected_globals = tf.concat(globals_to_collect, axis=-1)
     updated_globals = self._global_model(collected_globals)
-    return graph.replace(globals=updated_globals), show
+    return graph.replace(globals=updated_globals)
